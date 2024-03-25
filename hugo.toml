@@ -1,4 +1,5 @@
-baseURL = 'https://site.thiskurt.me/notawebcomic/'
+baseURL = 'https://thiskurt.github.io/notawebcomic/'
+publishdir = '/docs'
 languageCode = 'en-us'
 title = 'Mini Webcomic'
 
