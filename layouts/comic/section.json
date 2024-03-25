@@ -1,0 +1,7 @@
+{{- $pageURLs := slice -}}
+{{- range where site.RegularPages "Section" .Section -}}
+    {{- $pageURLs = $pageURLs | append .Permalink -}}
+{{- end -}}
+
+{{- $result := dict "pageURLs" $pageURLs -}}
+{{- $result | jsonify -}}
