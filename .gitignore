@@ -1,0 +1,6 @@
+.*
+public
+resources
+!.gitignore
+!.github/
+!.github/workflows/

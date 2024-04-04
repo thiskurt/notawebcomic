@@ -1,0 +1,9 @@
+{{$comicPagesByChapter := slice}}
+{{$comicPages := where site.RegularPages "Section" "comic"}}
+
+{{ range $comicPages }}
+    {{$chapter := .Params.chapterID}}
+    {{$comicPagesByChapter = $comicPagesByChapter | append (dict "Chapter" $chapter "Page" .)}}
+{{ end }}
+
+{{ return dict "comicPagesByChapter" $comicPagesByChapter }}

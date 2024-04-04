@@ -1,0 +1,22 @@
+{{define "main"}}
+    {{$comics := partial "comic/get-all-comics.html"}}
+
+    <h1>{{.Title}}</h1>
+    {{.Content}}
+
+    <ul>
+    {{range $comics.comicPages.Reverse}}
+        {{$page := partial "comic/get-comic-page.html" .}}
+        {{if $page.isSinglePageChapter}}
+        <li>
+            <a href="{{.Permalink}}" title="{{$page.dateStr}}">{{$page.chapterTitle}}</a>
+        </li>
+        {{end}}
+        {{if not $page.isSinglePageChapter}}
+        <li>
+            <a href="{{.Permalink}}" title="{{$page.dateStr}}">{{$page.chapterTitle}} #{{$page.pageNum}}</a>
+        </li>
+        {{end}}
+    {{end}}
+    </ul>
+{{end}}

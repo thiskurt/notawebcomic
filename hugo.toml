@@ -1,0 +1,34 @@
+baseURL = 'https://thiskurt.github.io/notawebcomic/'
+publishdir = '/docs'
+languageCode = 'en-us'
+title = 'Not a Webcomic'
+
+[params]
+description = 'Sequential art published on the web, but definitely not a webcomic.'
+dateFormat = 'Jan 2, 2006'
+comicResizeWidth = 2480 # 1280
+comicThumbResizeWidth = 300
+imgFormat = 'jpg'
+[params.author]
+name = 'thiskurt'
+
+[taxonomies]
+
+[[menu.main]]
+name = 'Home'
+pageRef = '/'
+weight = 1
+
+[[menu.main]]
+name = 'About'
+pageRef = '/about'
+weight = 2
+
+[[menu.main]]
+name = 'Archive'
+pageRef = '/archive'
+weight = 3
+
+[imaging]
+resampleFilter = 'Lanczos'
+quality = 75
