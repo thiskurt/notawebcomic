@@ -55,3 +55,5 @@ For now I've simplified the Archive page as a simple list until I do a proper th
 Termux seems to have issue with a 'build lock', but there is a workaround by using this flag: `--noBuildLock`
 
 It also seems to have an issue when I run it in termux itself where it reports the publish directory as readonly, doing it in proot/ubuntu works though.
+
+Maybe don't use dropbox for this one? Or probably the thing to do is to keep the PC, Phone and Tablet ones completely seperate, but for now let's just do this.
