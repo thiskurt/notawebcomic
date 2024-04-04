@@ -1,16 +1,16 @@
 baseURL = 'https://thiskurt.github.io/notawebcomic/'
 publishdir = '/docs'
 languageCode = 'en-us'
-title = 'Mini Webcomic'
+title = 'Not a Webcomic'
 
 [params]
-description = 'A minimal webcomic template built with Bootstrap and Hugo.'
+description = 'Sequential art published on the web, but definitely not a webcomic.'
 dateFormat = 'Jan 2, 2006'
-comicResizeWidth = 1280
+comicResizeWidth = 2480 # 1280
 comicThumbResizeWidth = 300
 imgFormat = 'jpg'
 [params.author]
-name = 'Your Name'
+name = 'thiskurt'
 
 [taxonomies]
 
